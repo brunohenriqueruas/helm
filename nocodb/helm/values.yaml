@@ -1,0 +1,17 @@
+serviceaccount:
+  service_account_role:
+
+alb:
+  certificate:
+
+image:
+  ecr_repository:
+  image_tag:
+  replica_number:
+  release_version:
+  environment:
+  nodegroups_name:
+env:          
+  BUILD_VERSION:
+  CLOUD_STACK:
+  NODE_ENV:
