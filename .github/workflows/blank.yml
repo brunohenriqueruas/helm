@@ -28,7 +28,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: instalando dependencias para wordpress
-        run:  apt-get update 
+        run:  sudo apt-get update 
               
         
       # Runs a single command using the runners shell
