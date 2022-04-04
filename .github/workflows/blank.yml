@@ -31,7 +31,7 @@ jobs:
         run:  sudo apt-get update
         
       - name: instalando apache        
-        run: sudo apt install apache2 \
+        run: sudo apt-get install apache2 \
                  ghostscript \
                  libapache2-mod-php \
                  mysql-server \
