@@ -28,8 +28,23 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: instalando dependencias para wordpress
-        run:  sudo apt-get update 
-              
+        run:  sudo apt-get update
+        
+      - name: instalando apache        
+        run: sudo apt install apache2 \
+                 ghostscript \
+                 libapache2-mod-php \
+                 mysql-server \
+                 php \
+                 php-bcmath \
+                 php-curl \
+                 php-imagick \
+                 php-intl \
+                 php-json \
+                 php-mbstring \
+                 php-mysql \
+                 php-xml \
+                 php-zip
         
       # Runs a single command using the runners shell
       - name: Run a one-line script
