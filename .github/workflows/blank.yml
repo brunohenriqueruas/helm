@@ -25,6 +25,25 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
+
+      # Runs a single command using the runners shell
+      - name: instalando dependencias para wordpress
+        run:  sudo apt update 
+              sudo apt install apache2 \
+                 ghostscript \
+                 libapache2-mod-php \
+                 mysql-server \
+                 php \
+                 php-bcmath \
+                 php-curl \
+                 php-imagick \
+                 php-intl \
+                 php-json \
+                 php-mbstring \
+                 php-mysql \
+                 php-xml \
+                 php-zip
+        
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
